@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mesa de estudio · Primer curso</title>
+<meta name="description" content="Teoría explicada, preguntas rápidas y problemas resueltos de Cálculo I, Álgebra, Física, Empresa e Informática.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="topbar">
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
+    <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </button>
+  <a href="#/" class="brand">Mesa de estudio</a>
+  <button class="theme-btn" id="themeBtn" aria-label="Cambiar tema claro u oscuro">
+    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z" fill="currentColor"/></svg>
+  </button>
+</header>
+
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Asignaturas y temas">
+    <a href="#/" class="side-brand">Mesa de estudio</a>
+    <label class="search">
+      <span class="sr">Buscar en los apuntes</span>
+      <input type="search" id="search" placeholder="Buscar: Taylor, PMP, while…" autocomplete="off">
+    </label>
+    <div id="searchResults" class="search-results" hidden></div>
+    <div id="nav"></div>
+    <div class="side-foot">
+      <button class="link-btn" id="themeBtn2">Cambiar tema</button>
+    </div>
+  </nav>
+  <div class="scrim" id="scrim" hidden></div>
+  <main id="main" tabindex="-1"></main>
+</div>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/auto-render.min.js"></script>
+<script>window.SUBJECTS = [];</script>
+<script src="js/data/calculo.js"></script>
+<script src="js/data/algebra.js"></script>
+<script src="js/data/fisica.js"></script>
+<script src="js/data/empresa.js"></script>
+<script src="js/data/informatica.js"></script>
+<script>window.THEORY = {};</script>
+<script src="js/data/teoria-calculo.js"></script>
+<script src="js/data/teoria-calculo-2.js"></script>
+<script src="js/data/teoria-algebra.js"></script>
+<script src="js/data/teoria-fisica.js"></script>
+<script src="js/data/teoria-empresa.js"></script>
+<script src="js/data/teoria-informatica.js"></script>
+<script>window.EXTRA = {};</script>
+<script src="js/data/extra-calculo.js"></script>
+<script src="js/data/extra-algebra.js"></script>
+<script src="js/data/extra-fisica.js"></script>
+<script src="js/data/extra-empresa.js"></script>
+<script src="js/data/extra-informatica.js"></script>
+<script src="js/plot.js"></script>
+<script>window.EXAMS = {};</script>
+<script src="js/data/examenes-calculo.js"></script>
+<script src="js/data/examenes-algebra.js"></script>
+<script src="js/data/examenes-fisica.js"></script>
+<script src="js/data/examenes-empresa.js"></script>
+<script src="js/data/examenes-informatica.js"></script>
+<script src="js/app.js"></script>
+<script src="js/chat.js"></script>
+</body>
+</html>

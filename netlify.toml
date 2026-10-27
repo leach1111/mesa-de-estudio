@@ -1,0 +1,4 @@
+# Configuración de Netlify para desplegar desde GitHub (necesario para la función del chat).
+[build]
+  publish = "."
+  functions = "netlify/functions"
